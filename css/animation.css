@@ -1,0 +1,286 @@
+.intro-2 {
+    background: url("../bg1.jpg")no-repeat center center;
+    background-size: cover;
+}
+html,
+body,
+
+.view {
+    height: 90%;
+}
+
+
+.view1 {
+    
+    
+    float: left;
+    border: 10px solid #fff;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    box-shadow: 1px 1px 2px #e6e6e6;
+    cursor: default;
+    background: #fff url() no-repeat center center
+}
+.view1 .mask1, .view1 .content {
+    
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0
+}
+.view1 img {
+    display: block;
+    position: relative
+}
+.view1 h2 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 12px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    margin: auto;
+}
+.card h5 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 20px 0 0 0
+}
+.view1 p {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 12px;
+    position: relative;
+    color: #fff;
+    padding: 10px 20px 20px;
+    text-align: center
+}
+.view1 a.info {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: 0 0 1px #000
+}
+.view1 a.info:hover {
+    box-shadow: 0 0 5px #000
+}
+
+
+ 
+
+.view-first img { 
+    transition: all 0.2s linear;
+}
+.view-first .mask {
+    opacity: 0;
+    background-color: rgba(219,127,8, 0.7); 
+    transition: all 0.4s ease-in-out;
+}
+.view-first h2 {
+    transform: translateY(-100px);
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+.view-first h5 {
+    transform: translateY(-100px);
+    
+    transition: all 0.2s ease-in-out;
+}
+.view-first p { 
+    transform: translateY(100px);
+    opacity: 0;
+	transition: all 0.2s linear;
+}
+.view-first a.info{
+    opacity: 0;
+	transition: all 0.2s ease-in-out;
+}
+.view-first:hover img { 
+	transform: scale(1.1);
+} 
+.view-first:hover .mask1 { 
+	opacity: 1;
+}
+.view-first:hover h2,
+.view-first:hover p,
+.view-first:hover a.info {
+    opacity: 1;
+    transform: translateY(0px);
+}
+.view-first:hover p {
+    transition-delay: 0.1s;
+}
+.view-first:hover a.info {
+    transition-delay: 0.2s;
+}
+
+
+
+
+.brand {
+   animation: bulge 10s  infinite;
+}
+
+@keyframes bulge {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+        font-size:20px;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+        font-size:70px;
+    }
+}
+
+.child
+{
+    display: block;
+
+    -webkit-animation: fadeInFromNone 5s ease-in-out infinite;
+    -moz-animation: fadeInFromNone 5s ease-in-out infinite;
+    -o-animation: fadeInFromNone 5s ease-in-out infinite;
+    animation: fadeInFromNone 5s ease-in-out infinite;
+    animation-delay: fadeInFromNone 10s;
+}
+
+@-webkit-keyframes fadeInFromNone {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeInFromNone {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeInFromNone {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInFromNone {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+
+.split {
+    height: 100%;
+   
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+   
+    
+  }
+  
+  /* Control the left side */
+  .left {
+    left: 0;
+    width: 70%;
+    background: url("../b1.gif")no-repeat center center;
+    background-size: cover;
+  }
+  
+  /* Control the right side */
+  .right {
+    right: 0;
+    width: 30%;
+    background-color: #36161e;
+   
+  }
+  
+  /* If you want the content centered horizontally and vertically */
+  .centered {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  /* Style the image inside the centered container, if needed */
+  .centered img {
+      margin-top: 20px;
+    width: 150px;
+    border-radius: 50%;
+  }
+  .centered p{
+      font-size: 15px;
+      color:#C0C0C0;
+      font-family: cursive;
+      
+  }
+  .left .centered h2{
+    
+    color:#36161e;
+   font-family: "Times New Roman", Times, serif;
+   font-style: italic;
+}
